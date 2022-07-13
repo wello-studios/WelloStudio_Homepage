@@ -24,7 +24,7 @@
 ## 제작하는데 참고한 자료들
 <br>
 
-> <a href="https://fightingsean.tistory.com/9">자바스크립트 - CSS변수 값 변경</a>
+> <a href="https://fightingsean.tistory.com/9">자바스크립트 - CSS변수 값 변경</a><br>
 > <a href="https://muring.itare.xyz/privacy/">개인정보처리방침 - Copyright 2022. Mua</a>
 <br><br>
 
