@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Condensed:wght@700&display=swap');
+
+/* ===== Variables ===== */
+
+:root{
+    /* = Color = */
+    --main-color: #fff;
+    --primary-color: #f8f8f8;
+
+    --sec-color: #2e2e33;
+    --thi-color: #293329;
+    --qua-color: #3f353f;
+
+    --button-color: #dddde8;
+    --button-selected-color: #8282ff;
+
+    --text-color: #6a6a6c;
+    --text-primary-color: #535356;
+    --text-white-color: #d6dce0;
+
+    --text-link-color: #81b1e5;
+    --text-link-pcolor: #60a0de;
+
+    /* = Transition = */
+    --tr-1: all 0.1s ease-in-out;
+    --tr-2: all 0.2s ease-in-out;
+    --tr-3: all 0.3s ease-in-out;
+    --tr-4: all 0.4s ease-in-out;
+    --tr-5: all 0.5s ease-in-out;
+
+    /* = Sizes = */
+    --menu-min-height: 55px;
+    --menu-height: 55px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    top: 0;
+    right: 0;
+    left: 0;
+
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+/* ===== Components Normal value ===== */
+
+body{
+    background-color: var(--main-color);
+
+    box-shadow: 0, -5px, 5px, black;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+/* ===== Classes ===== */
+
+/* == Header == */
+
+/* = menu = */
+.menu{
+    position: fixed;
+
+    width: auto;
+    height: var(--menu-height);
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    z-index: 5;
+
+    transition: var(--tr-4);
+}
+
+.menu *{
+    z-index: 6;
+    transition: var(--tr-4);
+}
+
+.menu .Logo{
+    position: relative;
+
+    filter: brightness(0);
+
+    margin-left: 15px;
+    height: 60px;
+    width: auto;
+}
+.menu .text{
+    position: relative;
+
+    top: var(--menu-min-height);
+
+    padding-left: 5px;
+    padding-right: 5px;
+
+    font-size: 26px;
+    font-weight: 500;
+
+    border-radius: 5px;
+
+    margin-left: 40vw;
+    left: 50px;
+
+    transition: var(--tr-1);
+}
+
+.menu .text:hover{
+    background: #e8e8e8;
+}
+
+.menu .menu_button{
+    position: relative;
+
+    width: 55px;
+    height: var(--menu-height);
+
+    border: 0;
+    outline: 0;
+
+    background: white;
+
+    float: right;
+
+    font-size: 44px;
+    color: var(--text-color);
+}
+
+.menu .menu_button:hover{
+    background: #e5e5e5;
+}
+
+/* == Body == */
+
+/* = TopLogo = */
+.TopLogo{
+    position: relative;
+
+    background: linear-gradient(315deg, var(--thi-color) 3%, var(--sec-color) 50%, var(--qua-color));
+
+    width: 100vw;
+    height: 90vh;
+
+    transition: var(--tr-4);
+}
+
+.TopLogo .middle_Logo{
+    position: relative;
+
+    display: block;
+    margin: 0 auto;
+
+    top: 32vh;
+
+    width: 40%;
+    height: auto;
+
+    filter: brightness(2.5) blur(0);
+
+    z-index: 1;
+
+    transition: var(--tr-5);
+}
+/* == Main == */
+
+.main::before{
+    content: string(LearnMore);
+}
+
+.main{
+    position: relative;
+
+    z-index: 2;
+
+    width: 100vw;
+    height: auto;
+
+    background: white;
+}
+
+.main .title2{
+    text-align: center;
+
+    color: black;
+
+    font-size: 40px;
+    padding: 20px;
+}
+
+.main h1{
+    text-align: center;
+
+    font-size: 60px;
+    padding: 20px;
+}
+
+.main h2{
+    text-align: center;
+
+    font-size: 55px;
+    padding: 10px;
+}
+
+.main h3{
+    text-align: left;
+
+    margin-left: 32%;
+    margin-right: 32%;
+
+    font-size: 25px;
+    padding: 10px;
+}
+
+.main p{
+    text-align: left;
+
+    font-size: 27px;
+    font-weight: 500;
+
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.pr p{
+    text-align: left;
+
+    font-size: 24px;
+    font-weight: 500;
+
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.main a{
+    text-decoration: none;
+
+    color: var(--text-link-color);
+}
+
+.main a:hover{
+    color: var(--text-link-pcolor);
+    text-decoration-line: underline;
+}
+
+/* == Footer == */
+
+.f_text{
+    position: relative;
+    padding: 5rem;
+
+    font-size: 20px;
+    margin-top: 4rem;
+
+    float: right;
+
+    text-decoration: none;
+
+    color: #6a6a6c;
+    transition: var(--tr-3);
+}
+
+.f_text b:hover{
+    position: relative;
+
+    padding-top: 1rem;
+    text-decoration-line: underline;
+}
+
+/* ===== Mobile ===== */
+@media (max-device-width: 800px) {
+    .TopLogo{
+        height: 92vh;
+    }
+
+    .TopLogo .middle_Logo{
+        top: 40vh;
+
+        width: 70%;
+        height: auto;
+    }
+
+    .main h1{
+        text-align: center;
+
+        font-size: 57px;
+        padding: 20px;
+    }
+
+    .main h2{
+        text-align: center;
+
+        font-size: 51px;
+        padding: 10px;
+    }
+
+    .main h3{
+        text-align: left;
+
+        font-size: 51px;
+        padding: 10px;
+    }
+
+    .main p{
+        text-align: left;
+
+        font-size: 18px;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
