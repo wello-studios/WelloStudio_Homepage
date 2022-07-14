@@ -8,7 +8,7 @@
   <br>
   <img src="https://cdn.discordapp.com/attachments/964724308821819446/997068060240396318/138_20220713180136.png" alt="" width="190" height="auto">
   <img src="https://cdn.discordapp.com/attachments/964724308821819446/997067821278302288/183_20220714181117.png" alt="" width="190" height="auto">
-  <br><b>우 엥 스 튜 디 오 | ITARE STUDIOS</b><br><br>
+  <br><b>우 엥 스 튜 디 오 | I T A R E W O R K S</b><br><br>
 </h3>
 
 ----
